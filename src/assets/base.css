@@ -16932,3 +16932,18 @@ a.badge-alternate:hover, a.badge-alternate:focus {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 768px){
+.app-main {
+    padding-top: 120px!important;
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-header {
+    position: fixed!important;
+    width: 100%!important;
+}
+.mb-2, .my-2 {
+    margin-bottom: 0.1rem!important;
+}
+.app-header .app-header__content{right: 5% !important;left:auto!important;width:fit-content}
+div.app-header-right> span{margin-left:1rem!important}
+}
