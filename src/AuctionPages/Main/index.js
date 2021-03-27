@@ -35,6 +35,20 @@ class Main extends React.Component {
 
         return (
             <Fragment>
+            <style>{`
+@media (max-width: 768px){
+.app-main {
+    padding-top: 120px!important;
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-header {
+    position: fixed!important;
+    width: 100%!important;
+}
+.mb-2, .my-2 {
+    margin-bottom: 0.1rem!important;
+}
+.app-header .app-header__content{right: 5% !important;}
+}`}</style>
                 <div className={cx(
                     "app-container app-theme-" + colorScheme,
                     {'fixed-header': enableFixedHeader},
